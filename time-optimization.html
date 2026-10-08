@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Optimization — Travzy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">&#9992;</span> Travzy</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle menu"><span></span></label>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="traveler-profile.html">Traveler Profile</a>
+      <a href="group-preferences.html">Group Preferences</a>
+      <a href="cultural-exploration.html">Cultural Exploration</a>
+      <a href="time-optimization.html" class="active">Time Optimization</a>
+      <a href="pricing-ticketing.html">Pricing &amp; Ticketing</a>
+    </nav>
+    <div class="topbar-user"><span class="avatar">AK</span> Aarav K.</div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Dashboard</a> <span>/</span> <span>Time Optimization</span></div>
+    <span class="eyebrow">Feature 04</span>
+    <h1>Time Optimization</h1>
+    <p>A timeline view of your day — start and end times, visit durations, travel gaps and the order of stops.</p>
+  </div>
+</section>
+
+<main class="page">
+
+<!-- ===== Inputs ===== -->
+<div class="container section" style="margin-top:26px;">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Trip Settings</span>
+      <h2>Day inputs</h2>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-outline btn-sm" type="button">◀ Previous day</button>
+      <button class="btn btn-navy btn-sm" type="button">Next day ▶</button>
+    </div>
+  </div>
+
+  <div class="day-bar">
+    <div class="day-field">
+      <div class="mini-label">Selected Travel Date</div>
+      <div class="val">Sun, 12 Oct 2026<small>Day 1 of 3 &middot; Jaipur</small></div>
+    </div>
+    <div class="day-field">
+      <div class="mini-label">Available Travel Time</div>
+      <div class="val">09:00 &rarr; 18:30<small>9 hours 30 minutes window</small></div>
+    </div>
+    <div class="day-field">
+      <div class="mini-label">Places Selected</div>
+      <div class="val">6 stops<small>5 visits + 1 meal</small></div>
+    </div>
+    <div class="day-field">
+      <div class="mini-label">Group Pace</div>
+      <div class="val">Balanced<small>agreed 09:00 start</small></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Summary stats ===== -->
+<div class="container section">
+  <div class="grid grid-4">
+    <div class="stat">
+      <div class="stat-icon">🚀</div>
+      <div class="stat-label">Start Time</div>
+      <div class="stat-value">09:00</div>
+      <div class="stat-note">hotel departure</div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon navy">🏁</div>
+      <div class="stat-label">End Time</div>
+      <div class="stat-value">18:30</div>
+      <div class="stat-note">back at hotel</div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon orange">🚌</div>
+      <div class="stat-label">Total Travel Time</div>
+      <div class="stat-value">1h 50m</div>
+      <div class="stat-note">across 5 transfers</div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon green">👀</div>
+      <div class="stat-label">Total Sightseeing</div>
+      <div class="stat-value">6h 10m</div>
+      <div class="stat-note">61% of the day</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Route order strip ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Route Order Visualization</span>
+      <h2>Stop sequence at a glance</h2>
+      <p>Arrows show travel legs between consecutive stops.</p>
+    </div>
+    <span class="badge badge-orange">⏱ 1h 50m total transit</span>
+  </div>
+
+  <div class="route-strip">
+    <div class="route-stop">
+      <span class="n">1</span>
+      <b>City Palace</b>
+      <span>09:00 &middot; 1h 30m</span>
+      <span class="leg">30′</span>
+    </div>
+    <div class="route-stop">
+      <span class="n">2</span>
+      <b>Hawa Mahal</b>
+      <span>11:00 &middot; 1h</span>
+      <span class="leg">25′</span>
+    </div>
+    <div class="route-stop">
+      <span class="n">3</span>
+      <b>LMB Restaurant</b>
+      <span>13:00 &middot; 1h</span>
+      <span class="leg">35′</span>
+    </div>
+    <div class="route-stop">
+      <span class="n">4</span>
+      <b>Anokhi Museum</b>
+      <span>15:00 &middot; 1h 15m</span>
+      <span class="leg">20′</span>
+    </div>
+    <div class="route-stop">
+      <span class="n">5</span>
+      <b>Patrika Gate</b>
+      <span>16:30 &middot; 1h</span>
+      <span class="leg">30′</span>
+    </div>
+    <div class="route-stop">
+      <span class="n">6</span>
+      <b>Birla Mandir</b>
+      <span>17:45 &middot; 45m</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Timeline ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Timeline Itinerary</span>
+      <h2>Your day, hour by hour</h2>
+      <p>Static example schedule — no scheduling algorithm runs in this prototype.</p>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-outline btn-sm" type="button">✎ Adjust times</button>
+      <button class="btn btn-primary btn-sm" type="button">Save Day Plan</button>
+    </div>
+  </div>
+
+  <div class="split-wide">
+
+    <!-- Timeline column -->
+    <div class="card card-pad">
+      <div class="timeline">
+
+        <!-- Morning -->
+        <div class="tl-part">
+          <div class="tl-part-head">
+            <span class="ic">🌅</span>
+            <div>
+              <h3>Morning</h3>
+              <span>09:00 &ndash; 12:00 &middot; 3 items</span>
+            </div>
+          </div>
+          <div class="tl-items">
+
+            <div class="tl-item">
+              <div class="tl-time">09:00 &rarr; 10:30<small>1h 30m visit</small></div>
+              <div class="tl-main">
+                <b>🏛️ City Palace Museum</b>
+                <span>Jaleb Chowk &middot; royal courtyards &amp; Sheesh Mahal</span>
+              </div>
+              <div class="tl-meta">
+                <span class="badge badge-orange">₹100</span>
+                <span class="badge badge-navy">Historical</span>
+              </div>
+            </div>
+
+            <div class="tl-item travel">
+              <div class="tl-time">10:30 &rarr; 11:00<small>travel &middot; 30 min</small></div>
+              <div class="tl-main">
+                <b>🚌 Move to Hawa Mahal</b>
+                <span>1.4 km &middot; auto-rickshaw via Tripolia Bazaar</span>
+              </div>
+              <div class="tl-meta"><span class="badge">Traffic: light</span></div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-time">11:00 &rarr; 12:00<small>1h visit</small></div>
+              <div class="tl-main">
+                <b>🪟 Hawa Mahal Heritage Site</b>
+                <span>Badi Chaupar &middot; 953-window façade &amp; top-floor café</span>
+              </div>
+              <div class="tl-meta">
+                <span class="badge badge-orange">₹50</span>
+                <span class="badge badge-navy">Heritage</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Afternoon -->
+        <div class="tl-part">
+          <div class="tl-part-head">
+            <span class="ic">☀️</span>
+            <div>
+              <h3>Afternoon</h3>
+              <span>12:00 &ndash; 16:30 &middot; 3 items</span>
+            </div>
+          </div>
+          <div class="tl-items">
+
+            <div class="tl-item travel">
+              <div class="tl-time">12:00 &rarr; 13:00<small>travel + rest &middot; 60 min</small></div>
+              <div class="tl-main">
+                <b>🚶 Walk to Johari Bazaar &amp; break</b>
+                <span>700 m walk &middot; 20 min seated rest (accessibility note)</span>
+              </div>
+              <div class="tl-meta"><span class="badge badge-green">Rest slot</span></div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-time">13:00 &rarr; 14:00<small>1h meal</small></div>
+              <div class="tl-main">
+                <b>🍛 LMB Rajasthani Thali</b>
+                <span>Johari Bazaar &middot; vegetarian thali, medium spice</span>
+              </div>
+              <div class="tl-meta">
+                <span class="badge badge-orange">₹250</span>
+                <span class="badge badge-green">Veg ✓</span>
+              </div>
+            </div>
+
+            <div class="tl-item travel">
+              <div class="tl-time">14:00 &rarr; 15:00<small>travel + cool-down &middot; 60 min</small></div>
+              <div class="tl-main">
+                <b>🚌 Move to Amrapali Lane &amp; shade break</b>
+                <span>2.6 km &middot; cab &middot; midday heat avoided indoors</span>
+              </div>
+              <div class="tl-meta"><span class="badge">Traffic: moderate</span></div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-time">15:00 &rarr; 16:15<small>1h 15m</small></div>
+              <div class="tl-main">
+                <b>🧵 Anokhi Block-Printing Demo</b>
+                <span>Tripolia &middot; live craft demonstration &amp; hands-on table</span>
+              </div>
+              <div class="tl-meta">
+                <span class="badge badge-orange">₹350</span>
+                <span class="badge badge-purple">Experience</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Evening -->
+        <div class="tl-part">
+          <div class="tl-part-head">
+            <span class="ic">🌇</span>
+            <div>
+              <h3>Evening</h3>
+              <span>16:30 &ndash; 18:30 &middot; 3 items</span>
+            </div>
+          </div>
+          <div class="tl-items">
+
+            <div class="tl-item travel">
+              <div class="tl-time">16:15 &rarr; 16:30<small>travel &middot; 20 min</small></div>
+              <div class="tl-main">
+                <b>🚌 Move to Patrika Gate</b>
+                <span>3.6 km &middot; cab to Jawahar Circle</span>
+              </div>
+              <div class="tl-meta"><span class="badge">Traffic: light</span></div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-time">16:30 &rarr; 17:30<small>1h photo walk</small></div>
+              <div class="tl-main">
+                <b>💎 Patrika Gate — Hidden Gem</b>
+                <span>Golden-hour photo walk across nine painted arches</span>
+              </div>
+              <div class="tl-meta">
+                <span class="badge badge-green">Free</span>
+                <span class="badge badge-purple">Photography</span>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-time">17:45 &rarr; 18:30<small>45m visit</small></div>
+              <div class="tl-main">
+                <b>🛕 Birla Mandir Sunset</b>
+                <span>Marble temple at dusk &middot; then return to hotel</span>
+              </div>
+              <div class="tl-meta">
+                <span class="badge badge-green">Free</span>
+                <span class="badge">Ends 18:30</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Side column -->
+    <div class="side-stack">
+
+      <div class="card">
+        <div class="card-header"><h3>📊 Day Split</h3></div>
+        <div class="card-body">
+          <div class="completion-item">
+            <div class="progress-meta"><span>👀 Sightseeing</span><span>6h 10m</span></div>
+            <div class="progress green"><span style="width:65%"></span></div>
+          </div>
+          <div class="completion-item">
+            <div class="progress-meta"><span>🚌 Travel</span><span>1h 50m</span></div>
+            <div class="progress navy"><span style="width:19%"></span></div>
+          </div>
+          <div class="completion-item">
+            <div class="progress-meta"><span>🍛 Meals &amp; breaks</span><span>1h 30m</span></div>
+            <div class="progress"><span style="width:16%"></span></div>
+          </div>
+          <hr class="divider">
+          <div class="kv-list">
+            <div class="kv"><span class="kv-k">Window used</span><span class="kv-v">9h 30m / 9h 30m</span></div>
+            <div class="kv"><span class="kv-k">Idle time</span><span class="kv-v green-text">0 min</span></div>
+            <div class="kv"><span class="kv-k">Longest gap</span><span class="kv-v">20 min</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><h3>🚶 Travel Legs</h3></div>
+        <div class="card-body">
+          <div class="kv-list">
+            <div class="kv"><span class="kv-k">1 &rarr; 2</span><span class="kv-v">30 min</span></div>
+            <div class="kv"><span class="kv-k">2 &rarr; 3</span><span class="kv-v">60 min</span></div>
+            <div class="kv"><span class="kv-k">3 &rarr; 4</span><span class="kv-v">60 min</span></div>
+            <div class="kv"><span class="kv-k">4 &rarr; 5</span><span class="kv-v">20 min</span></div>
+            <div class="kv"><span class="kv-k">5 &rarr; 6</span><span class="kv-v">30 min</span></div>
+            <div class="kv total"><span class="kv-k bold">Total transit</span><span class="kv-v">1h 50m</span></div>
+          </div>
+          <p class="small muted mt-1 mb-0">Leg times are sample values for the UI demo.</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <span class="ic">💡</span>
+        <div><b>Demo suggestion:</b> swapping stops 4 and 5 would cut about 12 minutes of transit. (Illustrative text only.)</div>
+      </div>
+
+      <div class="card card-pad" style="background:linear-gradient(135deg,var(--navy-900),var(--navy-700));border:0;color:#fff;">
+        <div class="eyebrow" style="color:var(--accent-400);">Ready?</div>
+        <h3 style="color:#fff;">Lock this timeline</h3>
+        <p class="small" style="color:rgba(255,255,255,0.75);">Moves the day plan into your pricing &amp; ticketing estimate.</p>
+        <div class="btn-row">
+          <a href="pricing-ticketing.html" class="btn btn-primary btn-sm">See cost estimate</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Example strip ===== -->
+<section class="container section">
+  <div class="card">
+    <div class="card-header"><h3>🧾 Quick read of the day</h3></div>
+    <div class="card-body">
+      <div class="chips" style="gap:10px;">
+        <span class="chip accent">09:00 → Historical Museum</span>
+        <span class="chip accent">10:30 → Travel</span>
+        <span class="chip accent">11:00 → Heritage Site</span>
+        <span class="chip accent">13:00 → Local Restaurant</span>
+        <span class="chip accent">15:00 → Hidden Gem</span>
+        <span class="chip accent">17:45 → Sunset Point</span>
+      </div>
+      <hr class="divider">
+      <div class="flex between wrap gap-2">
+        <div><div class="stat-label">Total estimated travel</div><div class="stat-value" style="font-size:22px;">1h 50m</div></div>
+        <div><div class="stat-label">Total sightseeing</div><div class="stat-value" style="font-size:22px;">6h 10m</div></div>
+        <div><div class="stat-label">Stops planned</div><div class="stat-value" style="font-size:22px;">6</div></div>
+        <div><div class="stat-label">Rest breaks</div><div class="stat-value" style="font-size:22px;">2</div></div>
+      </div>
+    </div>
+  </div>
+  <p class="small muted text-center mt-1">All timings are illustrative sample data — no route or schedule optimization is performed.</p>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="brand"><span class="brand-mark">&#9992;</span> Travzy</div>
+      <div>Personalized Travel Itinerary Planning System &middot; Team 1 UI Prototype</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Dashboard</a>
+      <a href="traveler-profile.html">Profile</a>
+      <a href="group-preferences.html">Group</a>
+      <a href="cultural-exploration.html">Explore</a>
+      <a href="time-optimization.html">Time</a>
+      <a href="pricing-ticketing.html">Pricing</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

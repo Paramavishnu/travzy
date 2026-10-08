@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cultural Exploration — Travzy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">&#9992;</span> Travzy</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle menu"><span></span></label>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="traveler-profile.html">Traveler Profile</a>
+      <a href="group-preferences.html">Group Preferences</a>
+      <a href="cultural-exploration.html" class="active">Cultural Exploration</a>
+      <a href="time-optimization.html">Time Optimization</a>
+      <a href="pricing-ticketing.html">Pricing &amp; Ticketing</a>
+    </nav>
+    <div class="topbar-user"><span class="avatar">AK</span> Aarav K.</div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Dashboard</a> <span>/</span> <span>Cultural Exploration</span></div>
+    <span class="eyebrow">Feature 03</span>
+    <h1>Cultural Exploration</h1>
+    <p>Search Jaipur through five cultural lenses — historical places, heritage sites, hidden gems, local food and lived cultural experiences.</p>
+  </div>
+</section>
+
+<main class="page">
+
+<!-- ===== Search + filters ===== -->
+<div class="container section" style="margin-top:26px;">
+  <div class="toolbar">
+    <label class="search">
+      <span>🔍</span>
+      <input type="text" placeholder="Search places, food, experiences… (e.g. fort, thali, puppet show)" aria-label="Search places">
+    </label>
+    <div class="filters">
+      <button class="filter active" type="button">✦ All</button>
+      <button class="filter" type="button">🏛️ Historical Places</button>
+      <button class="filter" type="button">🏗️ Heritage Sites</button>
+      <button class="filter" type="button">💎 Hidden Gems</button>
+      <button class="filter" type="button">🍛 Local Food</button>
+      <button class="filter" type="button">🎭 Cultural Experiences</button>
+    </div>
+  </div>
+
+  <div class="flex between wrap gap-1 mt-2">
+    <div class="chips">
+      <span class="chip on">Within 8 km</span>
+      <span class="chip">Under ₹300</span>
+      <span class="chip">Under 2 hours</span>
+      <span class="chip">Wheelchair friendly</span>
+      <span class="chip">Vegetarian friendly</span>
+    </div>
+    <div class="muted small">Showing <b>8</b> of 42 places &middot; matched to group preferences</div>
+  </div>
+</div>
+
+<!-- ===== Place cards ===== -->
+<section class="container section">
+
+  <!-- Row 1 -->
+  <div class="grid grid-3 mb-2">
+
+    <article class="place-card">
+      <div class="place-media m1">🏛️
+        <span class="badge">Historical Place</span>
+        <span class="badge rating">★ 4.8</span>
+      </div>
+      <div class="place-body">
+        <h3>City Palace Museum</h3>
+        <div class="place-loc">📍 Jaleb Chowk, Old City &middot; 2.1 km</div>
+        <p class="place-desc">A living royal residence blending Mughal and Rajasthani design, with the famous blue-and-gold Sheesh Mahal inside.</p>
+        <div class="cultural-note"><b>Cultural significance:</b> Seat of the Maharaja of Jaipur since 1727; showcases royal costumes, manuscripts and armory.</div>
+        <div class="place-facts">
+          <div class="fact"><b>1h 30m</b><span>Duration</span></div>
+          <div class="fact"><b>₹100</b><span>Entry</span></div>
+          <div class="fact"><b>09:30</b><span>Best start</span></div>
+        </div>
+        <button class="btn btn-primary btn-block" type="button">＋ Add to Itinerary</button>
+      </div>
+    </article>
+
+    <article class="place-card">
+      <div class="place-media m2">🪟
+        <span class="badge">Heritage Site</span>
+        <span class="badge rating">★ 4.7</span>
+      </div>
+      <div class="place-body">
+        <h3>Hawa Mahal</h3>
+        <div class="place-loc">📍 Badi Chaupar, Pink City &middot; 1.4 km</div>
+        <p class="place-desc">The iconic five-storey "Palace of Winds" with 953 honeycomb windows built for royal women to watch street life.</p>
+        <div class="cultural-note"><b>Cultural significance:</b> Symbol of Rajput architecture and the identity of Jaipur's Pink City skyline.</div>
+        <div class="place-facts">
+          <div class="fact"><b>1h</b><span>Duration</span></div>
+          <div class="fact"><b>₹50</b><span>Entry</span></div>
+          <div class="fact"><b>10:00</b><span>Best start</span></div>
+        </div>
+        <button class="btn btn-primary btn-block" type="button">＋ Add to Itinerary</button>
+      </div>
+    </article>
+
+    <article class="place-card">
+      <div class="place-media m3">🏯
+        <span class="badge">Heritage Site</span>
+        <span class="badge rating">★ 4.9</span>
+      </div>
+      <div class="place-body">
+        <h3>Amber Fort &amp; Sheesh Mahal</h3>
+        <div class="place-loc">📍 Devisinghpura, Amer &middot; 7.6 km</div>
+        <p class="place-desc">Hilltop fort with courtyards, mirror-inlaid halls and elephant-era gateways overlooking Maota Lake.</p>
+        <div class="cultural-note"><b>Cultural significance:</b> UNESCO-listed Rajput military hill fortress; hosted Mughal-era treaties and royal processions.</div>
+        <div class="place-facts">
+          <div class="fact"><b>2h 30m</b><span>Duration</span></div>
+          <div class="fact"><b>₹200</b><span>Entry</span></div>
+          <div class="fact"><b>09:00</b><span>Best start</span></div>
+        </div>
+        <button class="btn btn-primary btn-block" type="button">＋ Add to Itinerary</button>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Row 2 -->
+  <div class="grid grid-3 mb-2">
+
+    <article class="place-card">
+      <div class="place-media m4">💎
+        <span class="badge">Hidden Gem</span>
+        <span class="badge rating">★ 4.6</span>
+      </div>
+      <div class="place-body">
+        <h3>Patrika Gate Walk</h3>
+        <div class="place-loc">📍 Jawahar Circle, Malviya Nagar &middot; 6.2 km</div>
+        <p class="place-desc">Nine painted gateway arches narrating Rajasthan's festivals, crafts and dance forms — quiet and highly photogenic.</p>
+        <div class="cultural-note"><b>Cultural significance:</b> Modern folk-art mural project documenting the state's living craft traditions.</div>
+        <div class="place-facts">
+          <div class="fact"><b>1h</b><span>Duration</span></div>
+          <div class="fact"><b>Free</b><span>Entry</span></div>
+          <div class="fact"><b>16:30</b><span>Best start</span></div>
+        </div>
+        <button class="btn btn-primary btn-block" type="button">＋ Add to Itinerary</button>
+      </div>
+    </article>
+
+    <article class="place-card">
+      <div class="place-media m6">🍛
+        <span class="badge">Local Food</span>
+        <span class="badge rating">★ 4.8</span>
+      </div>
+      <div class="place-body">
+        <h3>LMB Rajasthani Thali</h3>
+        <div class="place-loc">📍 Johari Bazaar &middot; 1.8 km</div>
+        <p class="place-desc">A century-old dining hall serving dal-baati-churma, gatte ki sabzi and ker sangri on a brass platter.</p>
+        <div class="cultural-note"><b>Cultural significance:</b> Preserves traditional Marwari community recipes and ceremonial dining etiquette.</div>
+        <div class="place-facts">
+          <div class="fact"><b>1h</b><span>Duration</span></div>
+          <div class="fact"><b>₹250</b><span>Per person</span></div>
+          <div class="fact"><b>13:00</b><span>Best time</span></div>
+        </div>
+        <button class="btn btn-primary btn-block" type="button">＋ Add to Itinerary</button>
+      </div>
+    </article>
+
+    <article class="place-card">
+      <div class="place-media m5">🥨
+        <span class="badge">Local Food</span>
+        <span class="badge rating">★ 4.5</span>
+      </div>
+      <div class="place-body">
+        <h3>Rawat Mishthan Bhandar</h3>
+        <div class="place-loc">📍 Station Road &middot; 3.4 km</div>
+        <p class="place-desc">Famous for pyaaz kachori, ghewar and mawa kachori — the definitive Jaipur breakfast stop.</p>
+        <div class="cultural-note"><b>Cultural significance:</b> A 1940s shop that turned local snack culture into a city-wide identity.</div>
+        <div class="place-facts">
+          <div class="fact"><b>40m</b><span>Duration</span></div>
+          <div class="fact"><b>₹120</b><span>Per person</span></div>
+          <div class="fact"><b>08:30</b><span>Best time</span></div>
+        </div>
+        <button class="btn btn-primary btn-block" type="button">＋ Add to Itinerary</button>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Row 3 -->
+  <div class="grid grid-3">
+
+    <article class="place-card">
+      <div class="place-media m7">🎭
+        <span class="badge">Cultural Experience</span>
+        <span class="badge rating">★ 4.9</span>
+      </div>
+      <div class="place-body">
+        <h3>Chokhi Dhani Village Evening</h3>
+        <div class="place-loc">📍 Tonk Road &middot; 12 km</div>
+        <p class="place-desc">Folk dancers, kalbelia performers, puppet shows and horse rides inside a recreated Rajasthani village.</p>
+        <div class="cultural-note"><b>Cultural significance:</b> Keeps rural performance arts economically alive for visiting audiences.</div>
+        <div class="place-facts">
+          <div class="fact"><b>2h 30m</b><span>Duration</span></div>
+          <div class="fact"><b>₹600</b><span>Per person</span></div>
+          <div class="fact"><b>18:30</b><span>Best time</span></div>
+        </div>
+        <button class="btn btn-primary btn-block" type="button">＋ Add to Itinerary</button>
+      </div>
+    </article>
+
+    <article class="place-card">
+      <div class="place-media m8">🛕
+        <span class="badge">Historical Place</span>
+        <span class="badge rating">★ 4.4</span>
+      </div>
+      <div class="place-body">
+        <h3>Birla Mandir Temple</h3>
+        <div class="place-loc">📍 Jhotwara Road &middot; 4.5 km</div>
+        <p class="place-desc">White marble temple glowing at sunset, with carved panels depicting scenes from the Bhagavad Gita.</p>
+        <div class="cultural-note"><b>Cultural significance:</b> Modern marble craftsmanship meeting traditional Hindu temple layout.</div>
+        <div class="place-facts">
+          <div class="fact"><b>45m</b><span>Duration</span></div>
+          <div class="fact"><b>Free</b><span>Entry</span></div>
+          <div class="fact"><b>17:30</b><span>Best time</span></div>
+        </div>
+        <button class="btn btn-primary btn-block" type="button">＋ Add to Itinerary</button>
+      </div>
+    </article>
+
+    <article class="place-card">
+      <div class="place-media m2">🧵
+        <span class="badge">Cultural Experience</span>
+        <span class="badge rating">★ 4.7</span>
+      </div>
+      <div class="place-body">
+        <h3>Anokhi Block-Printing Demo</h3>
+        <div class="place-loc">📍 Amrapali Lane, Tripolia &middot; 2.6 km</div>
+        <p class="place-desc">Watch artisans hand-block natural dyes onto cotton, then try the technique yourself at a print table.</p>
+        <div class="cultural-note"><b>Cultural significance:</b> Jaipur's 400-year-old hand-block printing craft, recognised as a GI-tagged tradition.</div>
+        <div class="place-facts">
+          <div class="fact"><b>1h 15m</b><span>Duration</span></div>
+          <div class="fact"><b>₹350</b><span>Per person</span></div>
+          <div class="fact"><b>11:30</b><span>Best time</span></div>
+        </div>
+        <button class="btn btn-primary btn-block" type="button">＋ Add to Itinerary</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== Category overview ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Browse by Category</span>
+      <h2>Five cultural lenses</h2>
+      <p>Static counts shown for the demo.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-auto">
+    <div class="card card-pad">
+      <div class="stat-icon">🏛️</div>
+      <h3>Historical Places</h3>
+      <p class="small muted">Palaces, forts, observatories and museums that shaped the city.</p>
+      <span class="badge badge-navy">12 places</span>
+    </div>
+    <div class="card card-pad">
+      <div class="stat-icon navy">🏗️</div>
+      <h3>Heritage Sites</h3>
+      <p class="small muted">Protected architecture and UNESCO-listed landmarks.</p>
+      <span class="badge badge-navy">8 sites</span>
+    </div>
+    <div class="card card-pad">
+      <div class="stat-icon purple">💎</div>
+      <h3>Hidden Gems</h3>
+      <p class="small muted">Quiet courtyards, painted gates and local favourites.</p>
+      <span class="badge badge-purple">9 gems</span>
+    </div>
+    <div class="card card-pad">
+      <div class="stat-icon green">🍛</div>
+      <h3>Local Food</h3>
+      <p class="small muted">Heritage eateries, street snacks and regional thalis.</p>
+      <span class="badge badge-green">7 stops</span>
+    </div>
+    <div class="card card-pad">
+      <div class="stat-icon">🎭</div>
+      <h3>Cultural Experiences</h3>
+      <p class="small muted">Craft demos, folk shows, walks and workshops.</p>
+      <span class="badge badge-orange">6 experiences</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="container section">
+  <div class="cost-hero">
+    <div>
+      <div class="label">Next step</div>
+      <div class="amount" style="font-size:30px;">4 places selected</div>
+      <div class="sub">City Palace &middot; Hawa Mahal &middot; LMB Thali &middot; Patrika Gate</div>
+    </div>
+    <div class="btn-row">
+      <a href="time-optimization.html" class="btn btn-primary">Arrange into a timeline</a>
+      <a href="pricing-ticketing.html" class="btn btn-ghost-light">Estimate cost</a>
+    </div>
+  </div>
+  <p class="small muted text-center mt-1">"Add to Itinerary" buttons are visual UI elements only — no data is stored.</p>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="brand"><span class="brand-mark">&#9992;</span> Travzy</div>
+      <div>Personalized Travel Itinerary Planning System &middot; Team 1 UI Prototype</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Dashboard</a>
+      <a href="traveler-profile.html">Profile</a>
+      <a href="group-preferences.html">Group</a>
+      <a href="cultural-exploration.html">Explore</a>
+      <a href="time-optimization.html">Time</a>
+      <a href="pricing-ticketing.html">Pricing</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

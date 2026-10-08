@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing &amp; Ticketing — Travzy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">&#9992;</span> Travzy</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle menu"><span></span></label>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="traveler-profile.html">Traveler Profile</a>
+      <a href="group-preferences.html">Group Preferences</a>
+      <a href="cultural-exploration.html">Cultural Exploration</a>
+      <a href="time-optimization.html">Time Optimization</a>
+      <a href="pricing-ticketing.html" class="active">Pricing &amp; Ticketing</a>
+    </nav>
+    <div class="topbar-user"><span class="avatar">AK</span> Aarav K.</div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Dashboard</a> <span>/</span> <span>Pricing &amp; Ticketing</span></div>
+    <span class="eyebrow">Feature 05</span>
+    <h1>Pricing &amp; Ticketing</h1>
+    <p>Estimated trip cost, budget progress, expense breakdown, ticket cards and booking reminders — all visual, nothing charged.</p>
+  </div>
+</section>
+
+<main class="page">
+
+<!-- ===== Cost hero ===== -->
+<div class="container section" style="margin-top:26px;">
+  <div class="cost-hero">
+    <div>
+      <div class="label">Total Estimated Trip Cost &middot; Per Person</div>
+      <div class="amount">₹2,800</div>
+      <div class="sub">3 days / 2 nights &middot; Jaipur &middot; 4 travellers &middot; updated 8 Oct 2026</div>
+      <div class="btn-row mt-2">
+        <button class="btn btn-primary" type="button">🎟️ Book Tickets</button>
+        <button class="btn btn-ghost-light" type="button">⬇︎ Download Estimate</button>
+      </div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-row"><span class="swatch" style="background:#1e4a7a;"></span><span class="name">Transport</span><span class="amt">₹800</span></div>
+      <div class="legend-row"><span class="swatch" style="background:#f59e0b;"></span><span class="name">Entry Tickets</span><span class="amt">₹500</span></div>
+      <div class="legend-row"><span class="swatch" style="background:#16a34a;"></span><span class="name">Food Estimate</span><span class="amt">₹1,200</span></div>
+      <div class="legend-row"><span class="swatch" style="background:#7c3aed;"></span><span class="name">Other Expenses</span><span class="amt">₹300</span></div>
+      <div class="legend-row" style="border-top:1px solid rgba(255,255,255,0.2);padding-top:10px;">
+        <span class="swatch" style="background:#fff;"></span>
+        <span class="name" style="color:#fff;font-weight:800;">Total</span>
+        <span class="amt" style="color:var(--accent-400);font-size:19px;">₹2,800</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Budget progress ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Budget Health</span>
+      <h2>Budget progress</h2>
+      <p>Sample values against an agreed group budget of ₹3,500 per person.</p>
+    </div>
+    <span class="badge badge-green"><span class="dot"></span> Under budget by ₹700</span>
+  </div>
+
+  <div class="grid grid-3">
+
+    <div class="card card-pad">
+      <div class="progress-meta"><span>Estimated spend</span><span class="bold">₹2,800 / ₹3,500</span></div>
+      <div class="progress green"><span style="width:80%"></span></div>
+      <p class="small muted mt-1 mb-0">80% of budget used &middot; ₹700 headroom left.</p>
+      <hr class="divider">
+      <div class="kv-list">
+        <div class="kv"><span class="kv-k">Daily average</span><span class="kv-v">₹933</span></div>
+        <div class="kv"><span class="kv-k">Per group (×4)</span><span class="kv-v">₹11,200</span></div>
+      </div>
+    </div>
+
+    <div class="card card-pad">
+      <div class="progress-meta"><span>Prepaid so far</span><span class="bold">₹1,150 / ₹2,800</span></div>
+      <div class="progress navy"><span style="width:41%"></span></div>
+      <p class="small muted mt-1 mb-0">Hotel + train tickets already confirmed.</p>
+      <hr class="divider">
+      <div class="kv-list">
+        <div class="kv"><span class="kv-k">✅ Prepaid</span><span class="kv-v">₹1,150</span></div>
+        <div class="kv"><span class="kv-k">🕓 Pay on trip</span><span class="kv-v">₹1,650</span></div>
+      </div>
+    </div>
+
+    <div class="card card-pad">
+      <div class="progress-meta"><span>Group budget alignment</span><span class="bold">₹3,200 agreed</span></div>
+      <div class="progress"><span style="width:87%"></span></div>
+      <p class="small muted mt-1 mb-0">From merged group preference card.</p>
+      <hr class="divider">
+      <div class="kv-list">
+        <div class="kv"><span class="kv-k">Lowest member cap</span><span class="kv-v">₹2,500</span></div>
+        <div class="kv"><span class="kv-k">Highest member cap</span><span class="kv-v">₹4,000</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Breakdown ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Expense Breakdown</span>
+      <h2>Where the money goes</h2>
+    </div>
+  </div>
+
+  <div class="grid grid-2">
+
+    <div class="card">
+      <div class="card-header">
+        <h3>💸 Cost Breakdown</h3>
+        <span class="badge">Per person</span>
+      </div>
+      <div class="card-body">
+        <div class="breakdown-bar" aria-hidden="true">
+          <span class="b1" style="width:28.5%;"></span>
+          <span class="b2" style="width:18%;"></span>
+          <span class="b3" style="width:43%;"></span>
+          <span class="b4" style="width:10.5%;"></span>
+        </div>
+        <div class="chips small mb-2">
+          <span class="chip"><span class="dot" style="color:#1e4a7a;"></span> Transport 28.5%</span>
+          <span class="chip"><span class="dot" style="color:#f59e0b;"></span> Tickets 18%</span>
+          <span class="chip"><span class="dot" style="color:#16a34a;"></span> Food 43%</span>
+          <span class="chip"><span class="dot" style="color:#7c3aed;"></span> Other 10.5%</span>
+        </div>
+
+        <div class="kv-list">
+          <div class="kv">
+            <span class="kv-k">🚌 Transport &mdash; cab, auto, parking</span>
+            <span class="kv-v">₹800</span>
+          </div>
+          <div class="kv">
+            <span class="kv-k">🎟️ Entry tickets &mdash; 4 monuments</span>
+            <span class="kv-v">₹500</span>
+          </div>
+          <div class="kv">
+            <span class="kv-k">🍽️ Food &mdash; 3 meals + snacks</span>
+            <span class="kv-v">₹1,200</span>
+          </div>
+          <div class="kv">
+            <span class="kv-k">🛍️ Other &mdash; tips, water, souvenirs</span>
+            <span class="kv-v">₹300</span>
+          </div>
+          <div class="kv total">
+            <span class="kv-k bold">Total</span>
+            <span class="kv-v">₹2,800</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3>🗒️ Itemised Estimates</h3>
+        <button class="btn btn-sm btn-outline" type="button">＋ Add Item</button>
+      </div>
+      <div class="card-body">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">Train &mdash; Bengaluru → Jaipur</span><span class="kv-v">₹450</span></div>
+          <div class="kv"><span class="kv-k">Local cab &amp; auto (Day 1&ndash;3)</span><span class="kv-v">₹350</span></div>
+          <div class="kv"><span class="kv-k">City Palace entry</span><span class="kv-v">₹100</span></div>
+          <div class="kv"><span class="kv-k">Hawa Mahal entry</span><span class="kv-v">₹50</span></div>
+          <div class="kv"><span class="kv-k">Amber Fort entry</span><span class="kv-v">₹200</span></div>
+          <div class="kv"><span class="kv-k">Anokhi workshop</span><span class="kv-v">₹350</span></div>
+          <div class="kv"><span class="kv-k">Meals — breakfast ×3</span><span class="kv-v">₹360</span></div>
+          <div class="kv"><span class="kv-k">Meals — lunch ×3</span><span class="kv-v">₹540</span></div>
+          <div class="kv"><span class="kv-k">Meals — dinner ×2</span><span class="kv-v">₹300</span></div>
+          <div class="kv"><span class="kv-k">Chokhi Dhani evening</span><span class="kv-v">₹0</span></div>
+          <div class="kv"><span class="kv-k">Water, tips, misc.</span><span class="kv-v">₹150</span></div>
+          <div class="kv total"><span class="kv-k bold">Grand Total</span><span class="kv-v">₹2,800</span></div>
+        </div>
+        <p class="small muted mt-1 mb-0">Figures are hand-written demo values — no pricing service is connected.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Tickets ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Tickets &amp; Passes</span>
+      <h2>Your ticket wallet</h2>
+      <p>Visual ticket cards — booking buttons do not perform any purchase.</p>
+    </div>
+    <span class="badge badge-navy">4 tickets &middot; 2 pending</span>
+  </div>
+
+  <div class="grid grid-4">
+
+    <article class="ticket-card">
+      <div class="ticket-head">
+        <h3>City Palace Museum</h3>
+        <span class="badge badge-green">Confirmed</span>
+      </div>
+      <div class="ticket-body">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">Date</span><span class="kv-v">12 Oct 2026</span></div>
+          <div class="kv"><span class="kv-k">Entry</span><span class="kv-v">09:00 &rarr; 10:30</span></div>
+          <div class="kv"><span class="kv-k">Guests</span><span class="kv-v">4 adults</span></div>
+          <div class="kv"><span class="kv-k">Amount</span><span class="kv-v">₹400</span></div>
+        </div>
+        <button class="btn btn-outline btn-sm btn-block mt-1" type="button">View Ticket</button>
+      </div>
+      <div class="ticket-stub">
+        <span>Ref: TVZ-CP-1012</span>
+        <span class="barcode"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      </div>
+    </article>
+
+    <article class="ticket-card">
+      <div class="ticket-head" style="background:linear-gradient(135deg,#b45309,#f59e0b);">
+        <h3>Amber Fort</h3>
+        <span class="badge">Pending</span>
+      </div>
+      <div class="ticket-body">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">Date</span><span class="kv-v">13 Oct 2026</span></div>
+          <div class="kv"><span class="kv-k">Entry</span><span class="kv-v">09:00 &rarr; 11:30</span></div>
+          <div class="kv"><span class="kv-k">Guests</span><span class="kv-v">4 adults</span></div>
+          <div class="kv"><span class="kv-k">Amount</span><span class="kv-v">₹800</span></div>
+        </div>
+        <button class="btn btn-primary btn-sm btn-block mt-1" type="button">Reserve (demo)</button>
+      </div>
+      <div class="ticket-stub">
+        <span>Ref: not issued</span>
+        <span class="barcode"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      </div>
+    </article>
+
+    <article class="ticket-card">
+      <div class="ticket-head" style="background:linear-gradient(135deg,#15803d,#16a34a);">
+        <h3>Train &mdash; B4 / 21&ndash;24</h3>
+        <span class="badge badge-green">Confirmed</span>
+      </div>
+      <div class="ticket-body">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">Departure</span><span class="kv-v">12 Oct, 06:40</span></div>
+          <div class="kv"><span class="kv-k">Coach</span><span class="kv-v">B4 &middot; Seats 21&ndash;24</span></div>
+          <div class="kv"><span class="kv-k">Platform</span><span class="kv-v">6 (indicated)</span></div>
+          <div class="kv"><span class="kv-k">Amount</span><span class="kv-v">₹1,800</span></div>
+        </div>
+        <button class="btn btn-outline btn-sm btn-block mt-1" type="button">Download e-Ticket</button>
+      </div>
+      <div class="ticket-stub">
+        <span>PNR: 4526180933</span>
+        <span class="barcode"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      </div>
+    </article>
+
+    <article class="ticket-card">
+      <div class="ticket-head" style="background:linear-gradient(135deg,#6d28d9,#8b5cf6);">
+        <h3>Chokhi Dhani</h3>
+        <span class="badge">Not booked</span>
+      </div>
+      <div class="ticket-body">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">Date</span><span class="kv-v">13 Oct 2026</span></div>
+          <div class="kv"><span class="kv-k">Entry</span><span class="kv-v">18:30 &rarr; 21:00</span></div>
+          <div class="kv"><span class="kv-k">Guests</span><span class="kv-v">4 adults</span></div>
+          <div class="kv"><span class="kv-k">Amount</span><span class="kv-v">₹2,400</span></div>
+        </div>
+        <button class="btn btn-outline btn-sm btn-block mt-1" type="button">Notify me later</button>
+      </div>
+      <div class="ticket-stub">
+        <span>Ref: not issued</span>
+        <span class="barcode"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== Reminders ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Upcoming Bookings</span>
+      <h2>Booking reminders</h2>
+      <p>Static reminder cards demonstrating how deadline alerts would appear.</p>
+    </div>
+    <button class="btn btn-outline btn-sm" type="button">＋ Add Reminder</button>
+  </div>
+
+  <div class="grid grid-2">
+    <div class="side-stack">
+      <div class="reminder urgent">
+        <div class="ic">⏰</div>
+        <div>
+          <h4>Amber Fort slot closes tomorrow</h4>
+          <p>Reserve the 09:00 entry for 4 guests before 11 Oct, 18:00. Est. ₹800.</p>
+          <div class="btn-row mt-1">
+            <button class="btn btn-sm btn-navy" type="button">Reserve now</button>
+            <button class="btn btn-sm btn-outline" type="button">Snooze</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="reminder">
+        <div class="ic">🚆</div>
+        <div>
+          <h4>Train departure &mdash; 12 Oct, 06:40</h4>
+          <p>Reach station by 06:10. Coach B4, seats 21&ndash;24, e-Ticket already confirmed.</p>
+          <div class="btn-row mt-1">
+            <button class="btn btn-sm btn-outline" type="button">View e-Ticket</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="reminder">
+        <div class="ic">🍛</div>
+        <div>
+          <h4>LMB table request &mdash; 12 Oct, 13:00</h4>
+          <p>Optional table hold for 4. No payment required in this prototype.</p>
+          <div class="btn-row mt-1">
+            <button class="btn btn-sm btn-outline" type="button">Request table</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-stack">
+      <div class="reminder done">
+        <div class="ic">✅</div>
+        <div>
+          <h4>Hotel Pearl Palace &mdash; confirmed</h4>
+          <p>Check-in 12 Oct, 14:00 &middot; 2 rooms &middot; ₹1,150 prepaid. Free cancellation until 10 Oct.</p>
+        </div>
+      </div>
+
+      <div class="reminder done">
+        <div class="ic">✅</div>
+        <div>
+          <h4>Train tickets &mdash; issued</h4>
+          <p>PNR 4526180933 &middot; 4 seats confirmed &middot; ₹1,800 paid.</p>
+        </div>
+      </div>
+
+      <div class="card card-pad">
+        <div class="flex between center wrap gap-1 mb-2">
+          <h3 class="mb-0">Payment status</h3>
+          <span class="badge badge-orange">Demo only</span>
+        </div>
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">✅ Prepaid</span><span class="kv-v green-text">₹1,150</span></div>
+          <div class="kv"><span class="kv-k">🕓 Pay at venue</span><span class="kv-v">₹1,650</span></div>
+          <div class="kv total"><span class="kv-k bold">Trip total</span><span class="kv-v">₹2,800</span></div>
+        </div>
+        <div class="callout warm mt-2">
+          <span class="ic">🔒</span>
+          <div>No payment gateway is connected — this screen is a UI demonstration only.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="container section">
+  <div class="cost-hero">
+    <div>
+      <div class="label">All set for Day 1</div>
+      <div class="amount" style="font-size:32px;">₹2,800 estimated</div>
+      <div class="sub">Transport ₹800 &middot; Tickets ₹500 &middot; Food ₹1,200 &middot; Other ₹300</div>
+    </div>
+    <div class="btn-row">
+      <a href="time-optimization.html" class="btn btn-ghost-light">Back to timeline</a>
+      <a href="index.html" class="btn btn-primary">Return to dashboard</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="brand"><span class="brand-mark">&#9992;</span> Travzy</div>
+      <div>Personalized Travel Itinerary Planning System &middot; Team 1 UI Prototype</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Dashboard</a>
+      <a href="traveler-profile.html">Profile</a>
+      <a href="group-preferences.html">Group</a>
+      <a href="cultural-exploration.html">Explore</a>
+      <a href="time-optimization.html">Time</a>
+      <a href="pricing-ticketing.html">Pricing</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

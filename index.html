@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travzy — Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">&#9992;</span> Travzy</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle menu"><span></span></label>
+    <nav class="nav">
+      <a href="index.html" class="active">Dashboard</a>
+      <a href="traveler-profile.html">Traveler Profile</a>
+      <a href="group-preferences.html">Group Preferences</a>
+      <a href="cultural-exploration.html">Cultural Exploration</a>
+      <a href="time-optimization.html">Time Optimization</a>
+      <a href="pricing-ticketing.html">Pricing &amp; Ticketing</a>
+    </nav>
+    <div class="topbar-user"><span class="avatar">AK</span> Aarav K.</div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="dash-hero">
+  <div class="container">
+    <div class="eyebrow">Personalized Travel Itinerary Planning</div>
+    <h1>Welcome back, Aarav &#128075;</h1>
+    <p>Your Jaipur cultural weekend is 82% planned. Review your group preferences, explore heritage spots and lock in a time-optimised route.</p>
+    <div class="hero-tags">
+      <span class="badge"><span class="dot"></span> Trip: Jaipur, Rajasthan</span>
+      <span class="badge"><span class="dot"></span> 12 &ndash; 14 Oct 2026</span>
+      <span class="badge"><span class="dot"></span> 4 Travellers</span>
+      <span class="badge"><span class="dot"></span> Cultural &amp; Heritage</span>
+    </div>
+    <div class="btn-row mt-2">
+      <a href="time-optimization.html" class="btn btn-primary">View Day Plan</a>
+      <a href="cultural-exploration.html" class="btn btn-ghost-light">Explore Places</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Stat strip ===== -->
+<div class="container">
+  <div class="stat-strip">
+    <div class="stat">
+      <div class="stat-icon">👤</div>
+      <div class="stat-label">Profile Complete</div>
+      <div class="stat-value">82%</div>
+      <div class="stat-note">2 preferences pending</div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon navy">👥</div>
+      <div class="stat-label">Group Members</div>
+      <div class="stat-value">4</div>
+      <div class="stat-note">3 conflicts resolved</div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon green">⏱️</div>
+      <div class="stat-label">Planned Sightseeing</div>
+      <div class="stat-value">7h 30m</div>
+      <div class="stat-note">across 6 stops</div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon purple">💰</div>
+      <div class="stat-label">Estimated Budget</div>
+      <div class="stat-value">₹2,800</div>
+      <div class="stat-note">per person &middot; on track</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Feature navigation ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Team 1 Modules</span>
+      <h2>Plan every part of your trip</h2>
+      <p>Jump into any module &mdash; each screen connects to your unified itinerary.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-3">
+    <a href="traveler-profile.html" class="feature-card">
+      <div class="ic">👤</div>
+      <div>
+        <h3>Traveler Profile</h3>
+        <p>Interests, travel style, budget, food and accessibility preferences in one place.</p>
+        <span class="go">Open profile &rarr;</span>
+      </div>
+    </a>
+
+    <a href="group-preferences.html" class="feature-card">
+      <div class="ic orange">👥</div>
+      <div>
+        <h3>Group Preferences</h3>
+        <p>Compare each member's choices, spot conflicts and view the unified group profile.</p>
+        <span class="go">Open group &rarr;</span>
+      </div>
+    </a>
+
+    <a href="cultural-exploration.html" class="feature-card">
+      <div class="ic purple">🏛️</div>
+      <div>
+        <h3>Cultural Exploration</h3>
+        <p>Discover historical places, hidden gems, local food and cultural experiences.</p>
+        <span class="go">Start exploring &rarr;</span>
+      </div>
+    </a>
+
+    <a href="time-optimization.html" class="feature-card">
+      <div class="ic">⏱️</div>
+      <div>
+        <h3>Time Optimization</h3>
+        <p>Morning to evening timeline with travel gaps, durations and route order.</p>
+        <span class="go">See timeline &rarr;</span>
+      </div>
+    </a>
+
+    <a href="pricing-ticketing.html" class="feature-card">
+      <div class="ic green">🎟️</div>
+      <div>
+        <h3>Pricing &amp; Ticketing</h3>
+        <p>Budget progress, expense breakdown, ticket cards and booking reminders.</p>
+        <span class="go">View budget &rarr;</span>
+      </div>
+    </a>
+
+    <div class="feature-card">
+      <div class="ic orange">🗺️</div>
+      <div>
+        <h3>Unified Itinerary</h3>
+        <p>All five modules feed into one clean, presentation-ready day plan.</p>
+        <span class="go">Preview below &darr;</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Connected overview ===== -->
+<section class="container section">
+  <div class="grid grid-2">
+
+    <!-- Profile summary -->
+    <div class="card card-accent">
+      <div class="card-header">
+        <h3>&#128100; Traveler Profile Summary</h3>
+        <a href="traveler-profile.html" class="btn btn-sm btn-outline">Edit Preferences</a>
+      </div>
+      <div class="card-body">
+        <div class="flex center gap-2 mb-2">
+          <span class="avatar lg a1">AK</span>
+          <div>
+            <h3 class="mb-0">Aarav Kapoor</h3>
+            <p class="muted small mb-0">Solo traveller &middot; Planning for 4 &middot; Bengaluru, IN</p>
+            <div class="chips mt-1">
+              <span class="chip accent">Culture Buff</span>
+              <span class="chip">Mid Budget</span>
+              <span class="chip">Vegetarian</span>
+            </div>
+          </div>
+        </div>
+        <hr class="divider">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">Travel Style</span><span class="kv-v">Relaxed &amp; Cultural</span></div>
+          <div class="kv"><span class="kv-k">Route Preference</span><span class="kv-v">Direct, minimal backtracking</span></div>
+          <div class="kv"><span class="kv-k">Daily Time Budget</span><span class="kv-v">9 hrs &middot; 09:00 &ndash; 18:00</span></div>
+          <div class="kv"><span class="kv-k">Accessibility</span><span class="kv-v">Elevator access needed</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Group summary -->
+    <div class="card card-accent">
+      <div class="card-header">
+        <h3>&#128101; Group Summary</h3>
+        <a href="group-preferences.html" class="btn btn-sm btn-outline">Manage Group</a>
+      </div>
+      <div class="card-body">
+        <div class="flex center gap-1 mb-2">
+          <span class="avatar a1">AK</span>
+          <span class="avatar a2">SM</span>
+          <span class="avatar a3">RN</span>
+          <span class="avatar a4">TI</span>
+          <span class="muted small" style="margin-left:8px;">Aarav, Sanya, Rohan, Tisha</span>
+        </div>
+        <hr class="divider">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">🟢 Common Interests</span><span class="kv-v">7 of 9 areas</span></div>
+          <div class="kv"><span class="kv-k">🔴 Conflicting Preferences</span><span class="kv-v">2 open</span></div>
+          <div class="kv"><span class="kv-k">Agreement Score</span><span class="kv-v green-text">78% aligned</span></div>
+        </div>
+        <div class="progress green mt-2"><span style="width:78%"></span></div>
+        <div class="flex between small muted mt-1"><span>Group alignment</span><span>78%</span></div>
+        <div class="chips mt-2">
+          <span class="chip on">Heritage Sites</span>
+          <span class="chip on">Street Food</span>
+          <span class="chip on">Photography</span>
+          <span class="chip">Nightlife</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Itinerary overview -->
+    <div class="card card-accent">
+      <div class="card-header">
+        <h3>&#128197; Current Itinerary &mdash; Day 1</h3>
+        <a href="time-optimization.html" class="btn btn-sm btn-outline">Full Timeline</a>
+      </div>
+      <div class="card-body">
+        <div class="mini-itin">
+          <div class="mini-stop">
+            <span class="pin">1</span>
+            <div class="txt"><b>09:00 &mdash; City Palace Museum</b><span>1h 30m visit &middot; ₹100 entry</span></div>
+          </div>
+          <div class="mini-stop">
+            <span class="pin navy">2</span>
+            <div class="txt"><b>11:00 &mdash; Hawa Mahal Heritage Site</b><span>1h visit &middot; 30m travel before</span></div>
+          </div>
+          <div class="mini-stop">
+            <span class="pin">3</span>
+            <div class="txt"><b>13:00 &mdash; Laxmi Mishthan Bhandar</b><span>Local vegetarian thali &middot; ₹250</span></div>
+          </div>
+          <div class="mini-stop">
+            <span class="pin navy">4</span>
+            <div class="txt"><b>15:00 &mdash; Patrika Gate Hidden Gem</b><span>1h photo walk &middot; free entry</span></div>
+          </div>
+          <div class="mini-stop">
+            <span class="pin">5</span>
+            <div class="txt"><b>17:00 &mdash; Nahargarh Sunset Point</b><span>1h &middot; closes 18:00</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer flex between center wrap gap-1">
+        <span class="small muted">Travel time <b class="accent-text">1h 50m</b> &middot; Sightseeing <b class="green-text">5h 30m</b></span>
+        <a href="time-optimization.html" class="btn btn-sm btn-navy">Optimize Day</a>
+      </div>
+    </div>
+
+    <!-- Time optimization summary -->
+    <div class="card card-accent">
+      <div class="card-header">
+        <h3>&#9201; Time Optimization Summary</h3>
+        <a href="time-optimization.html" class="btn btn-sm btn-outline">Open Tool</a>
+      </div>
+      <div class="card-body">
+        <div class="grid grid-2" style="gap:12px;">
+          <div class="stat" style="box-shadow:none;">
+            <div class="stat-label">Start Time</div>
+            <div class="stat-value" style="font-size:22px;">09:00</div>
+            <div class="stat-note">Hotel departure</div>
+          </div>
+          <div class="stat" style="box-shadow:none;">
+            <div class="stat-label">End Time</div>
+            <div class="stat-value" style="font-size:22px;">18:30</div>
+            <div class="stat-note">Return to hotel</div>
+          </div>
+          <div class="stat" style="box-shadow:none;">
+            <div class="stat-label">Total Travel</div>
+            <div class="stat-value" style="font-size:22px;">1h 50m</div>
+            <div class="stat-note">5 transfers</div>
+          </div>
+          <div class="stat" style="box-shadow:none;">
+            <div class="stat-label">Idle Gap</div>
+            <div class="stat-value" style="font-size:22px;">15m</div>
+            <div class="stat-note">well packed day</div>
+          </div>
+        </div>
+        <div class="callout mt-2">
+          <span class="ic">💡</span>
+          <div><b>Suggestion shown for demo:</b> visiting Nahargarh before Amber Fort would save roughly 25 minutes of backtracking.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Recommended places ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Cultural Exploration</span>
+      <h2>Recommended for your group</h2>
+      <p>Matched against your shared interests in heritage, food and photography.</p>
+    </div>
+    <a href="cultural-exploration.html" class="btn btn-outline btn-sm">View all places</a>
+  </div>
+
+  <div class="grid grid-4">
+    <article class="place-card">
+      <div class="place-media m1">🏛️<span class="badge">Heritage</span><span class="badge rating">★ 4.8</span></div>
+      <div class="place-body">
+        <h3>City Palace Museum</h3>
+        <div class="place-loc">📍 Jaipur, Rajasthan</div>
+        <p class="place-desc">A stunning blend of Mughal and Rajasthani architecture still home to the royal family.</p>
+        <div class="place-facts">
+          <div class="fact"><b>1h 30m</b><span>Duration</span></div>
+          <div class="fact"><b>₹100</b><span>Entry</span></div>
+          <div class="fact"><b>AM</b><span>Best time</span></div>
+        </div>
+        <a href="cultural-exploration.html" class="btn btn-primary btn-sm btn-block">Add to Itinerary</a>
+      </div>
+    </article>
+
+    <article class="place-card">
+      <div class="place-media m2">🪟<span class="badge">Hidden Gem</span><span class="badge rating">★ 4.6</span></div>
+      <div class="place-body">
+        <h3>Patrika Gate</h3>
+        <div class="place-loc">📍 Jawahar Circle, Jaipur</div>
+        <p class="place-desc">Colourful painted gateways framing the city &mdash; a favourite for photographers.</p>
+        <div class="place-facts">
+          <div class="fact"><b>1h</b><span>Duration</span></div>
+          <div class="fact"><b>Free</b><span>Entry</span></div>
+          <div class="fact"><b>PM</b><span>Best time</span></div>
+        </div>
+        <a href="cultural-exploration.html" class="btn btn-primary btn-sm btn-block">Add to Itinerary</a>
+      </div>
+    </article>
+
+    <article class="place-card">
+      <div class="place-media m3">🍛<span class="badge">Local Food</span><span class="badge rating">★ 4.7</span></div>
+      <div class="place-body">
+        <h3>LMB Thali Experience</h3>
+        <div class="place-loc">📍 Johari Bazaar</div>
+        <p class="place-desc">Traditional Rajasthani vegetarian thali served in a century-old dining hall.</p>
+        <div class="place-facts">
+          <div class="fact"><b>1h</b><span>Duration</span></div>
+          <div class="fact"><b>₹250</b><span>Per person</span></div>
+          <div class="fact"><b>13:00</b><span>Suggested</span></div>
+        </div>
+        <a href="cultural-exploration.html" class="btn btn-primary btn-sm btn-block">Add to Itinerary</a>
+      </div>
+    </article>
+
+    <article class="place-card">
+      <div class="place-media m6">🎭<span class="badge">Experience</span><span class="badge rating">★ 4.9</span></div>
+      <div class="place-body">
+        <h3>Chokhi Dhani Evening</h3>
+        <div class="place-loc">📍 Tonk Road, Jaipur</div>
+        <p class="place-desc">Folk dance, puppet shows and live music inside a recreated Rajasthani village.</p>
+        <div class="place-facts">
+          <div class="fact"><b>2h 30m</b><span>Duration</span></div>
+          <div class="fact"><b>₹600</b><span>Per person</span></div>
+          <div class="fact"><b>EVE</b><span>Best time</span></div>
+        </div>
+        <a href="cultural-exploration.html" class="btn btn-primary btn-sm btn-block">Add to Itinerary</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== Budget summary ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Pricing &amp; Ticketing</span>
+      <h2>Budget summary</h2>
+      <p>Estimated per-person cost for the 3-day Jaipur trip.</p>
+    </div>
+    <a href="pricing-ticketing.html" class="btn btn-outline btn-sm">Open full breakdown</a>
+  </div>
+
+  <div class="grid grid-2">
+    <div class="card">
+      <div class="card-body">
+        <div class="flex between center wrap gap-1 mb-2">
+          <div>
+            <div class="stat-label">Total Estimated Cost</div>
+            <div class="stat-value">₹2,800</div>
+          </div>
+          <span class="badge badge-green"><span class="dot"></span> Under budget by ₹700</span>
+        </div>
+
+        <div class="progress green"><span style="width:80%"></span></div>
+        <div class="flex between small muted mt-1"><span>Spent / estimated</span><span class="bold">₹2,800 of ₹3,500</span></div>
+
+        <hr class="divider">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">🚌 Transport</span><span class="kv-v">₹800</span></div>
+          <div class="kv"><span class="kv-k">🎟️ Entry Tickets</span><span class="kv-v">₹500</span></div>
+          <div class="kv"><span class="kv-k">🍽️ Food Estimate</span><span class="kv-v">₹1,200</span></div>
+          <div class="kv"><span class="kv-k">🛍️ Other Expenses</span><span class="kv-v">₹300</span></div>
+          <div class="kv total"><span class="kv-k bold">Total</span><span class="kv-v">₹2,800</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><h3>🎟️ Upcoming Bookings</h3></div>
+      <div class="card-body" style="display:grid;gap:12px;">
+        <div class="reminder urgent">
+          <div class="ic">⏰</div>
+          <div>
+            <h4>Amber Fort tickets close tomorrow</h4>
+            <p>Slot 11:00 &middot; 4 tickets &middot; ₹200 each &mdash; reserve before 11 Oct.</p>
+          </div>
+        </div>
+        <div class="reminder">
+          <div class="ic">🚆</div>
+          <div>
+            <h4>Train to Jaipur &mdash; 12 Oct, 06:40</h4>
+            <p>Coach B4, seats 21&ndash;24. e-Ticket ready to download.</p>
+          </div>
+        </div>
+        <div class="reminder done">
+          <div class="ic">✅</div>
+          <div>
+            <h4>Hotel Pearl Palace confirmed</h4>
+            <p>Check-in 12 Oct, 14:00 &middot; 2 rooms &middot; prepaid.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a href="pricing-ticketing.html" class="btn btn-navy btn-sm btn-block">View all tickets &amp; reminders</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="brand"><span class="brand-mark">&#9992;</span> Travzy</div>
+      <div>Personalized Travel Itinerary Planning System &middot; Team 1 UI Prototype</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Dashboard</a>
+      <a href="traveler-profile.html">Profile</a>
+      <a href="group-preferences.html">Group</a>
+      <a href="cultural-exploration.html">Explore</a>
+      <a href="time-optimization.html">Time</a>
+      <a href="pricing-ticketing.html">Pricing</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

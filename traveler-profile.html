@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traveler Profile — Travzy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">&#9992;</span> Travzy</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle menu"><span></span></label>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="traveler-profile.html" class="active">Traveler Profile</a>
+      <a href="group-preferences.html">Group Preferences</a>
+      <a href="cultural-exploration.html">Cultural Exploration</a>
+      <a href="time-optimization.html">Time Optimization</a>
+      <a href="pricing-ticketing.html">Pricing &amp; Ticketing</a>
+    </nav>
+    <div class="topbar-user"><span class="avatar">AK</span> Aarav K.</div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Dashboard</a> <span>/</span> <span>Traveler Profile</span></div>
+    <span class="eyebrow">Feature 01</span>
+    <h1>Traveler Profile</h1>
+    <p>Your travel DNA in one screen — interests, style, budget, timing, food and accessibility preferences used to shape every itinerary suggestion.</p>
+  </div>
+</section>
+
+<main class="page">
+
+<!-- ===== Profile header ===== -->
+<div class="container section" style="margin-top:26px;">
+  <div class="split-2-1">
+
+    <div class="card profile-cover">
+      <div class="card-body">
+        <div class="profile-head">
+          <span class="avatar lg a1">AK</span>
+          <div class="meta">
+            <div class="eyebrow" style="color:var(--accent-400);">Traveler ID &middot; TVZ-0417</div>
+            <h1>Aarav Kapoor</h1>
+            <p class="sub">Bengaluru, India &middot; 12 trips &middot; Member since 2024</p>
+            <div class="hero-tags">
+              <span class="badge">🌍 Solo &amp; Group</span>
+              <span class="badge">🍛 Vegetarian</span>
+              <span class="badge">📸 Photography</span>
+              <span class="badge">🏛️ Heritage</span>
+            </div>
+          </div>
+        </div>
+        <div class="btn-row mt-2">
+          <button class="btn btn-primary" type="button">✏️ Edit Preferences</button>
+          <button class="btn btn-ghost-light" type="button">⬇︎ Export Summary</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="completion">
+      <div class="flex between center mb-2">
+        <h3 class="mb-0">Profile Completion</h3>
+        <span class="badge badge-orange">82%</span>
+      </div>
+
+      <div class="completion-item">
+        <div class="progress-meta"><span>Basic details</span><span>100%</span></div>
+        <div class="progress green"><span style="width:100%"></span></div>
+      </div>
+      <div class="completion-item">
+        <div class="progress-meta"><span>Interests &amp; activities</span><span>90%</span></div>
+        <div class="progress green"><span style="width:90%"></span></div>
+      </div>
+      <div class="completion-item">
+        <div class="progress-meta"><span>Budget &amp; time</span><span>80%</span></div>
+        <div class="progress"><span style="width:80%"></span></div>
+      </div>
+      <div class="completion-item">
+        <div class="progress-meta"><span>Food &amp; accessibility</span><span>60%</span></div>
+        <div class="progress"><span style="width:60%"></span></div>
+      </div>
+
+      <hr class="divider">
+      <div class="callout warm">
+        <span class="ic">⚠️</span>
+        <div><b>2 items pending:</b> add mobility notes and confirm daily step limit to improve suggestions.</div>
+      </div>
+      <button class="btn btn-navy btn-block mt-2" type="button">Complete My Profile</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== Preferences detail ===== -->
+<div class="container section">
+
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Saved Preferences</span>
+      <h2>How you like to travel</h2>
+      <p>Static example data &mdash; editing is visual only in this prototype.</p>
+    </div>
+    <button class="btn btn-primary" type="button">✏️ Edit Preferences</button>
+  </div>
+
+  <div class="grid grid-3">
+
+    <!-- Interests -->
+    <div class="card">
+      <div class="card-header"><h3>🧭 Travel Interests</h3></div>
+      <div class="card-body">
+        <div class="chips">
+          <span class="chip on">Historical Monuments</span>
+          <span class="chip on">Heritage Architecture</span>
+          <span class="chip on">Local Street Food</span>
+          <span class="chip on">Photography</span>
+          <span class="chip on">Folk Performances</span>
+          <span class="chip on">Museums</span>
+          <span class="chip">Nightlife</span>
+          <span class="chip">Adventure Sports</span>
+          <span class="chip">Luxury Shopping</span>
+          <span class="chip">Wellness &amp; Spa</span>
+        </div>
+        <hr class="divider">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">Top interest</span><span class="kv-v">Heritage Sites</span></div>
+          <div class="kv"><span class="kv-k">Interest tags saved</span><span class="kv-v">10</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Travel style -->
+    <div class="card">
+      <div class="card-header"><h3>🎒 Preferred Travel Style</h3></div>
+      <div class="card-body">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">Overall pace</span><span class="kv-v">Relaxed &mdash; 2&ndash;3 spots/day</span></div>
+          <div class="kv"><span class="kv-k">Planning style</span><span class="kv-v">Detailed day plan</span></div>
+          <div class="kv"><span class="kv-k">Group size</span><span class="kv-v">Small group (3&ndash;5)</span></div>
+          <div class="kv"><span class="kv-k">Accommodation</span><span class="kv-v">Boutique / heritage hotel</span></div>
+          <div class="kv"><span class="kv-k">Transport mode</span><span class="kv-v">AC cab + walking</span></div>
+        </div>
+        <hr class="divider">
+        <div class="pref-label">Pace slider</div>
+        <div class="flex between small muted"><span>Relaxed</span><span>Balanced</span><span>Packed</span></div>
+        <div class="progress navy mt-1"><span style="width:34%"></span></div>
+        <p class="small muted mt-1 mb-0">Currently leaning <b>Relaxed</b></p>
+      </div>
+    </div>
+
+    <!-- Route preference -->
+    <div class="card">
+      <div class="card-header"><h3>➡️ Direct Route Preference</h3></div>
+      <div class="card-body">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">Routing mode</span><span class="kv-v">Direct / point-to-point</span></div>
+          <div class="kv"><span class="kv-k">Avoid backtracking</span><span class="kv-v green-text">Yes, strongly</span></div>
+          <div class="kv"><span class="kv-k">Max transfers / day</span><span class="kv-v">5</span></div>
+          <div class="kv"><span class="kv-k">Walking tolerance</span><span class="kv-v">Up to 2 km per leg</span></div>
+        </div>
+        <hr class="divider">
+        <div class="callout">
+          <span class="ic">🗺️</span>
+          <div>Route order is shown as a <b>visual preview only</b> in this UI prototype.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Budget -->
+    <div class="card">
+      <div class="card-header"><h3>💰 Budget Preference</h3></div>
+      <div class="card-body">
+        <div class="flex between center mb-2">
+          <div>
+            <div class="stat-label">Daily Budget</div>
+            <div class="stat-value" style="font-size:24px;">₹2,800</div>
+            <div class="stat-note">per person / day</div>
+          </div>
+          <span class="badge badge-navy">Mid Range</span>
+        </div>
+        <div class="progress"><span style="width:56%"></span></div>
+        <div class="flex between small muted mt-1"><span>Economy ₹1,500</span><span>Luxury ₹5,000</span></div>
+        <hr class="divider">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">Accommodation cap</span><span class="kv-v">₹1,400 / night</span></div>
+          <div class="kv"><span class="kv-k">Food per day</span><span class="kv-v">₹600</span></div>
+          <div class="kv"><span class="kv-k">Activities per day</span><span class="kv-v">₹800</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Time constraints -->
+    <div class="card">
+      <div class="card-header"><h3>⏱️ Time Constraints</h3></div>
+      <div class="card-body">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">Trip duration</span><span class="kv-v">3 days / 2 nights</span></div>
+          <div class="kv"><span class="kv-k">Preferred start</span><span class="kv-v">09:00</span></div>
+          <div class="kv"><span class="kv-k">Preferred end</span><span class="kv-v">18:30</span></div>
+          <div class="kv"><span class="kv-k">Max sightseeing / day</span><span class="kv-v">8 hours</span></div>
+          <div class="kv"><span class="kv-k">Breaks</span><span class="kv-v">15 min every 2 hrs</span></div>
+        </div>
+        <hr class="divider">
+        <div class="pref-label">Availability window</div>
+        <div class="chips">
+          <span class="chip on">Mon</span><span class="chip on">Tue</span><span class="chip on">Wed</span>
+          <span class="chip on">Thu</span><span class="chip on">Fri</span>
+          <span class="chip">Sat</span><span class="chip">Sun</span>
+        </div>
+        <p class="small muted mt-1 mb-0">Weekends reserved for travel days.</p>
+      </div>
+    </div>
+
+    <!-- Food -->
+    <div class="card">
+      <div class="card-header"><h3>🍽️ Food Preferences</h3></div>
+      <div class="card-body">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">Diet</span><span class="kv-v">Vegetarian (no egg)</span></div>
+          <div class="kv"><span class="kv-k">Cuisine leaning</span><span class="kv-v">Rajasthani, North Indian</span></div>
+          <div class="kv"><span class="kv-k">Spice level</span><span class="kv-v">Medium 🌶️🌶️</span></div>
+          <div class="kv"><span class="kv-k">Allergies</span><span class="kv-v red-text">None declared</span></div>
+          <div class="kv"><span class="kv-k">Meal timing</span><span class="kv-v">Early &mdash; 13:00 / 19:30</span></div>
+        </div>
+        <hr class="divider">
+        <div class="pref-label">Liked food tags</div>
+        <div class="chips">
+          <span class="chip accent">Street Food</span>
+          <span class="chip accent">Thali</span>
+          <span class="chip accent">Sweets</span>
+          <span class="chip accent">Chai Cafés</span>
+          <span class="chip">Fine Dining</span>
+          <span class="chip">Seafood</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activities -->
+    <div class="card">
+      <div class="card-header"><h3>🎯 Preferred Activities</h3></div>
+      <div class="card-body">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">🚶 Heritage walks</span><span class="kv-v green-text">High</span></div>
+          <div class="kv"><span class="kv-k">📸 Photo walks</span><span class="kv-v green-text">High</span></div>
+          <div class="kv"><span class="kv-k">🎭 Cultural shows</span><span class="kv-v green-text">High</span></div>
+          <div class="kv"><span class="kv-k">🛍️ Local markets</span><span class="kv-v">Medium</span></div>
+          <div class="kv"><span class="kv-k">🛕 Temple visits</span><span class="kv-v">Medium</span></div>
+          <div class="kv"><span class="kv-k">🎢 Amusement parks</span><span class="kv-v red-text">Low</span></div>
+        </div>
+        <hr class="divider">
+        <div class="pref-label">Activity intensity</div>
+        <div class="progress navy"><span style="width:62%"></span></div>
+        <p class="small muted mt-1 mb-0">Moderate — culture-first, light on thrill rides.</p>
+      </div>
+    </div>
+
+    <!-- Accessibility -->
+    <div class="card span-2">
+      <div class="card-header"><h3>♿ Accessibility &amp; Other Constraints</h3></div>
+      <div class="card-body">
+        <div class="grid grid-2" style="gap:18px;">
+          <div>
+            <div class="kv-list">
+              <div class="kv"><span class="kv-k">Elevator access required</span><span class="kv-v badge badge-orange">Yes</span></div>
+              <div class="kv"><span class="kv-k">Avoid steep stairs</span><span class="kv-v badge badge-orange">Yes</span></div>
+              <div class="kv"><span class="kv-k">Wheelchair friendly route</span><span class="kv-v badge">Partial</span></div>
+            </div>
+          </div>
+          <div>
+            <div class="kv-list">
+              <div class="kv"><span class="kv-k">Rest every 2 hours</span><span class="kv-v badge badge-navy">Required</span></div>
+              <div class="kv"><span class="kv-k">Sun / heat sensitivity</span><span class="kv-v badge badge-navy">Midday shade</span></div>
+              <div class="kv"><span class="kv-k">Language</span><span class="kv-v">English, Hindi</span></div>
+            </div>
+          </div>
+        </div>
+        <hr class="divider">
+        <div class="pref-label">Additional notes</div>
+        <div class="chips">
+          <span class="chip">No early-morning starts before 08:30</span>
+          <span class="chip">Prefers covered seating outdoors</span>
+          <span class="chip">Needs seated photo spots</span>
+          <span class="chip">Carries medication at 21:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary card -->
+    <div class="card">
+      <div class="card-header"><h3>📋 Preference Summary</h3></div>
+      <div class="card-body">
+        <div class="chips mb-2">
+          <span class="chip on">Heritage</span>
+          <span class="chip on">Food</span>
+          <span class="chip on">Photos</span>
+          <span class="chip">Relaxed pace</span>
+        </div>
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">Style</span><span class="kv-v">Relaxed Cultural</span></div>
+          <div class="kv"><span class="kv-k">Budget</span><span class="kv-v">Mid &middot; ₹2,800/day</span></div>
+          <div class="kv"><span class="kv-k">Route</span><span class="kv-v">Direct</span></div>
+          <div class="kv"><span class="kv-k">Window</span><span class="kv-v">09:00&ndash;18:30</span></div>
+          <div class="kv"><span class="kv-k">Food</span><span class="kv-v">Veg, Medium spice</span></div>
+          <div class="kv"><span class="kv-k">Access</span><span class="kv-v">Elevator needed</span></div>
+        </div>
+        <div class="btn-row mt-2">
+          <button class="btn btn-primary btn-sm" type="button">Edit Preferences</button>
+          <button class="btn btn-outline btn-sm" type="button">Reset</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="brand"><span class="brand-mark">&#9992;</span> Travzy</div>
+      <div>Personalized Travel Itinerary Planning System &middot; Team 1 UI Prototype</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Dashboard</a>
+      <a href="traveler-profile.html">Profile</a>
+      <a href="group-preferences.html">Group</a>
+      <a href="cultural-exploration.html">Explore</a>
+      <a href="time-optimization.html">Time</a>
+      <a href="pricing-ticketing.html">Pricing</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

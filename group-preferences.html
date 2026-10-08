@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Group Preferences — Travzy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">&#9992;</span> Travzy</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle menu"><span></span></label>
+    <nav class="nav">
+      <a href="index.html">Dashboard</a>
+      <a href="traveler-profile.html">Traveler Profile</a>
+      <a href="group-preferences.html" class="active">Group Preferences</a>
+      <a href="cultural-exploration.html">Cultural Exploration</a>
+      <a href="time-optimization.html">Time Optimization</a>
+      <a href="pricing-ticketing.html">Pricing &amp; Ticketing</a>
+    </nav>
+    <div class="topbar-user"><span class="avatar">AK</span> Aarav K.</div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Dashboard</a> <span>/</span> <span>Group Preferences</span></div>
+    <span class="eyebrow">Feature 02</span>
+    <h1>Group Preference Management</h1>
+    <p>Every traveller votes, conflicts are surfaced visually, and one unified group profile emerges for the itinerary.</p>
+    <div class="hero-tags mt-2">
+      <span class="badge">👥 4 Members</span>
+      <span class="badge">🟢 78% Aligned</span>
+      <span class="badge">🔴 2 Conflicts</span>
+      <span class="badge">Jaipur Weekend</span>
+    </div>
+  </div>
+</section>
+
+<main class="page">
+
+<!-- ===== Group overview ===== -->
+<div class="container section" style="margin-top:26px;">
+  <div class="grid grid-4">
+    <div class="stat">
+      <div class="stat-icon">👥</div>
+      <div class="stat-label">Group Members</div>
+      <div class="stat-value">4</div>
+      <div class="stat-note">all preferences submitted</div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon green">🤝</div>
+      <div class="stat-label">Common Interests</div>
+      <div class="stat-value">7</div>
+      <div class="stat-note">of 9 categories</div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon purple">⚠️</div>
+      <div class="stat-label">Conflicts Open</div>
+      <div class="stat-value">2</div>
+      <div class="stat-note">budget + night activity</div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon navy">📊</div>
+      <div class="stat-label">Alignment Score</div>
+      <div class="stat-value">78%</div>
+      <div class="stat-note">ready to merge</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Member preference cards ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Individual Preferences</span>
+      <h2>What each traveller wants</h2>
+      <p>Static example cards &mdash; one per group member.</p>
+    </div>
+    <button class="btn btn-outline btn-sm" type="button">＋ Invite Member</button>
+  </div>
+
+  <div class="grid grid-4">
+
+    <!-- Member 1 -->
+    <article class="member-card">
+      <div class="member-top">
+        <span class="avatar a1">AK</span>
+        <div>
+          <h3>Aarav Kapoor</h3>
+          <div class="role">Organiser &middot; You</div>
+        </div>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Interests</div>
+        <div class="chips">
+          <span class="chip on">Heritage</span>
+          <span class="chip on">Museums</span>
+          <span class="chip on">Street Food</span>
+        </div>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Preferred Activities</div>
+        <p class="small muted mb-0">Heritage walks, photo walks, folk shows</p>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Budget</div>
+        <p class="small mb-0"><b class="accent-text">₹2,800</b> <span class="muted">/ day &middot; Mid range</span></p>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Travel Style</div>
+        <p class="small mb-0">Relaxed, detailed plan, direct routes</p>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Vote</div>
+        <span class="badge badge-green"><span class="dot"></span> Submitted</span>
+      </div>
+    </article>
+
+    <!-- Member 2 -->
+    <article class="member-card">
+      <div class="member-top">
+        <span class="avatar a2">SM</span>
+        <div>
+          <h3>Sanya Mehta</h3>
+          <div class="role">Member &middot; Foodie lead</div>
+        </div>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Interests</div>
+        <div class="chips">
+          <span class="chip on">Local Food</span>
+          <span class="chip on">Markets</span>
+          <span class="chip on">Cafés</span>
+        </div>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Preferred Activities</div>
+        <p class="small muted mb-0">Food tours, bazaar shopping, café hopping</p>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Budget</div>
+        <p class="small mb-0"><b class="accent-text">₹4,000</b> <span class="muted">/ day &middot; Comfort</span></p>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Travel Style</div>
+        <p class="small mb-0">Balanced pace, spontaneous stops</p>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Vote</div>
+        <span class="badge badge-green"><span class="dot"></span> Submitted</span>
+      </div>
+    </article>
+
+    <!-- Member 3 -->
+    <article class="member-card">
+      <div class="member-top">
+        <span class="avatar a3">RN</span>
+        <div>
+          <h3>Rohan Nair</h3>
+          <div class="role">Member &middot; History buff</div>
+        </div>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Interests</div>
+        <div class="chips">
+          <span class="chip on">History</span>
+          <span class="chip on">Architecture</span>
+          <span class="chip on">Museums</span>
+        </div>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Preferred Activities</div>
+        <p class="small muted mb-0">Guided monument tours, museum audio guides</p>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Budget</div>
+        <p class="small mb-0"><b class="accent-text">₹2,500</b> <span class="muted">/ day &middot; Economy</span></p>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Travel Style</div>
+        <p class="small mb-0">Packed days, early starts, long visits</p>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Vote</div>
+        <span class="badge badge-green"><span class="dot"></span> Submitted</span>
+      </div>
+    </article>
+
+    <!-- Member 4 -->
+    <article class="member-card">
+      <div class="member-top">
+        <span class="avatar a4">TI</span>
+        <div>
+          <h3>Tisha Iyer</h3>
+          <div class="role">Member &middot; Photography</div>
+        </div>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Interests</div>
+        <div class="chips">
+          <span class="chip on">Photography</span>
+          <span class="chip on">Hidden Gems</span>
+          <span class="chip on">Sunsets</span>
+        </div>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Preferred Activities</div>
+        <p class="small muted mb-0">Photo walks, viewpoint sunsets, night lights</p>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Budget</div>
+        <p class="small mb-0"><b class="accent-text">₹3,200</b> <span class="muted">/ day &middot; Mid-high</span></p>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Travel Style</div>
+        <p class="small mb-0">Flexible, golden-hour focused</p>
+      </div>
+      <div class="mini-block">
+        <div class="mini-label">Vote</div>
+        <span class="badge badge-green"><span class="dot"></span> Submitted</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== Comparison matrix ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Visual Comparison</span>
+      <h2>Side-by-side preference matrix</h2>
+      <p>Green = agreement across the group &nbsp;•&nbsp; Red = conflicting choices.</p>
+    </div>
+    <div class="chips">
+      <span class="chip" style="background:var(--green-100);border-color:#bbe9cb;color:var(--green-600);">✓ Aligned</span>
+      <span class="chip" style="background:var(--red-100);border-color:#fbcaca;color:var(--red-500);">✗ Conflict</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="matrix-wrap">
+      <table class="matrix">
+        <thead>
+          <tr>
+            <th>Preference Dimension</th>
+            <th>Aarav</th>
+            <th>Sanya</th>
+            <th>Rohan</th>
+            <th>Tisha</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="agree">
+            <th>Heritage &amp; monuments</th>
+            <td class="cell-match">High</td>
+            <td class="cell-match">High</td>
+            <td class="cell-match">High</td>
+            <td class="cell-match">High</td>
+            <td><span class="badge badge-green">Aligned</span></td>
+          </tr>
+          <tr class="agree">
+            <th>Local food exploration</th>
+            <td class="cell-match">High</td>
+            <td class="cell-match">High</td>
+            <td class="cell-match">Medium</td>
+            <td class="cell-match">Medium</td>
+            <td><span class="badge badge-green">Aligned</span></td>
+          </tr>
+          <tr class="agree">
+            <th>Photography stops</th>
+            <td class="cell-match">High</td>
+            <td class="cell-match">Medium</td>
+            <td class="cell-match">Medium</td>
+            <td class="cell-match">High</td>
+            <td><span class="badge badge-green">Aligned</span></td>
+          </tr>
+          <tr class="agree">
+            <th>Museums &amp; galleries</th>
+            <td class="cell-match">High</td>
+            <td class="cell-match">Medium</td>
+            <td class="cell-match">High</td>
+            <td class="cell-match">Medium</td>
+            <td><span class="badge badge-green">Aligned</span></td>
+          </tr>
+          <tr class="conflict">
+            <th>💬 Daily budget</th>
+            <td class="cell-clash">₹2,800</td>
+            <td class="cell-clash">₹4,000</td>
+            <td class="cell-clash">₹2,500</td>
+            <td class="cell-clash">₹3,200</td>
+            <td><span class="badge badge-red">Conflict</span></td>
+          </tr>
+          <tr class="conflict">
+            <th>💬 Night activities</th>
+            <td class="cell-clash">No</td>
+            <td class="cell-clash">Yes</td>
+            <td class="cell-clash">No</td>
+            <td class="cell-clash">Yes</td>
+            <td><span class="badge badge-red">Conflict</span></td>
+          </tr>
+          <tr class="agree">
+            <th>Daily start time</th>
+            <td class="cell-match">09:00</td>
+            <td class="cell-match">09:30</td>
+            <td class="cell-match">08:30</td>
+            <td class="cell-match">09:00</td>
+            <td><span class="badge badge-green">Close match</span></td>
+          </tr>
+          <tr class="agree">
+            <th>Pace of the day</th>
+            <td class="cell-match">Relaxed</td>
+            <td class="cell-match">Balanced</td>
+            <td class="cell-match">Packed</td>
+            <td class="cell-match">Relaxed</td>
+            <td><span class="badge badge-orange">Minor gap</span></td>
+          </tr>
+          <tr class="agree">
+            <th>Dietary preference</th>
+            <td class="cell-match">Veg</td>
+            <td class="cell-match">Veg</td>
+            <td class="cell-match">Veg</td>
+            <td class="cell-match">Veg</td>
+            <td><span class="badge badge-green">Aligned</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card-footer small muted">
+      Comparison shown for presentation purposes only — no scoring logic runs in this prototype.
+    </div>
+  </div>
+</section>
+
+<!-- ===== Common + Conflicting ===== -->
+<section class="container section">
+  <div class="grid grid-2">
+
+    <!-- Common interests -->
+    <div class="card card-accent">
+      <div class="card-header">
+        <h3>🟢 Common Interests</h3>
+        <span class="badge badge-green">7 shared</span>
+      </div>
+      <div class="card-body">
+        <div class="chips mb-2">
+          <span class="chip accent">🏛️ Historical Places</span>
+          <span class="chip accent">🍛 Local Food</span>
+          <span class="chip accent">📸 Photography</span>
+          <span class="chip accent">🏗️ Heritage Architecture</span>
+          <span class="chip accent">🎭 Cultural Shows</span>
+          <span class="chip accent">🛍️ Local Markets</span>
+          <span class="chip accent">🕍 Temples</span>
+        </div>
+        <hr class="divider">
+        <div class="kv-list">
+          <div class="kv"><span class="kv-k">All 4 members voted High</span><span class="kv-v green-text">4 / 4</span></div>
+          <div class="kv"><span class="kv-k">3 members voted High</span><span class="kv-v green-text">3 / 4</span></div>
+          <div class="kv"><span class="kv-k">Suggested group focus</span><span class="kv-v">Heritage + Food</span></div>
+        </div>
+        <div class="progress green mt-2"><span style="width:87%"></span></div>
+        <div class="flex between small muted mt-1"><span>Shared interest coverage</span><span>87%</span></div>
+      </div>
+    </div>
+
+    <!-- Conflicting preferences -->
+    <div class="card card-accent" style="border-top-color:var(--red-500);">
+      <div class="card-header">
+        <h3>🔴 Conflicting Preferences</h3>
+        <span class="badge badge-red">2 open</span>
+      </div>
+      <div class="card-body" style="display:grid;gap:14px;">
+
+        <div class="reminder urgent">
+          <div class="ic">💸</div>
+          <div>
+            <h4>Conflict 1 — Daily Budget</h4>
+            <p>Sanya prefers ₹4,000/day while Rohan caps at ₹2,500. Spread of <b>₹1,500</b>.</p>
+            <div class="chips mt-1">
+              <span class="chip">₹4,000</span><span class="chip">₹3,200</span><span class="chip">₹2,800</span><span class="chip">₹2,500</span>
+            </div>
+            <div class="btn-row mt-1">
+              <button class="btn btn-sm btn-navy" type="button">Vote on ₹3,200</button>
+              <button class="btn btn-sm btn-outline" type="button">Discuss</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="reminder urgent">
+          <div class="ic">🌙</div>
+          <div>
+            <h4>Conflict 2 — Night Activities</h4>
+            <p>Sanya &amp; Tisha want an evening light show; Aarav &amp; Rohan prefer an early night.</p>
+            <div class="chips mt-1">
+              <span class="chip" style="color:var(--green-600);">2 × Yes</span>
+              <span class="chip" style="color:var(--red-500);">2 × No</span>
+            </div>
+            <div class="btn-row mt-1">
+              <button class="btn btn-sm btn-navy" type="button">Make optional</button>
+              <button class="btn btn-sm btn-outline" type="button">Discuss</button>
+            </div>
+          </div>
+        </div>
+
+        <p class="small muted mb-0">Buttons are visual only — no voting logic is applied in this prototype.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Merge visualisation ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Preference Merging</span>
+      <h2>How individual choices become one plan</h2>
+      <p>A visual representation of the merge step &mdash; no algorithm runs here.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <div class="merge-flow">
+
+        <div class="merge-col">
+          <div class="mini-label">Step 1 &middot; Collect</div>
+          <div class="merge-item">Aarav <small>Heritage · ₹2,800 · Relaxed</small></div>
+          <div class="merge-item orange">Sanya <small>Food · ₹4,000 · Balanced</small></div>
+          <div class="merge-item green">Rohan <small>Museums · ₹2,500 · Packed</small></div>
+          <div class="merge-item">Tisha <small>Photos · ₹3,200 · Flexible</small></div>
+        </div>
+
+        <div class="merge-arrow">&rarr;</div>
+
+        <div class="merge-col">
+          <div class="mini-label">Step 2 &middot; Find overlap</div>
+          <div class="merge-item green">✓ Heritage &amp; monuments <small>4 / 4 agree</small></div>
+          <div class="merge-item green">✓ Local food experiences <small>4 / 4 agree</small></div>
+          <div class="merge-item green">✓ Photography stops <small>4 / 4 agree</small></div>
+          <div class="merge-item">⚖ Budget midpoint <small>₹3,125 → rounded ₹3,200</small></div>
+        </div>
+
+        <div class="merge-arrow">&rarr;</div>
+
+        <div class="merge-col">
+          <div class="mini-label">Step 3 &middot; Resolve</div>
+          <div class="merge-item orange">⚖ Pace compromise <small>Relaxed days + 1 packed day</small></div>
+          <div class="merge-item orange">⚖ Night activity <small>Optional evening slot</small></div>
+          <div class="merge-item">✓ Start time <small>09:00 majority choice</small></div>
+          <div class="merge-item">✓ Diet <small>Vegetarian, medium spice</small></div>
+        </div>
+
+        <div class="merge-arrow">&rarr;</div>
+
+        <div class="merge-col">
+          <div class="mini-label">Step 4 &middot; Unified</div>
+          <div class="merge-item green" style="border-left-width:6px;">🎯 Group Profile Ready<small>Used by all other modules</small></div>
+          <div class="merge-item green"><small>Alignment score</small>78% aligned</div>
+          <div class="merge-item orange"><small>Remaining</small>1 optional conflict</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="card-footer small muted">
+      Demonstration graphic only — the merged values above are hand-written sample data.
+    </div>
+  </div>
+</section>
+
+<!-- ===== Unified group preferences ===== -->
+<section class="container section">
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">Final Output</span>
+      <h2>Unified Group Preferences</h2>
+      <p>The single card every other module reads from.</p>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-outline btn-sm" type="button">✎ Edit</button>
+      <button class="btn btn-primary btn-sm" type="button">Confirm Group Profile</button>
+    </div>
+  </div>
+
+  <div class="unified-card">
+    <div class="flex between wrap gap-2 center">
+      <div>
+        <div class="eyebrow" style="color:var(--accent-400);">Jaipur Cultural Weekend &middot; 4 Travellers</div>
+        <h2>Unified Group Preference Profile</h2>
+      </div>
+      <span class="badge badge-green"><span class="dot"></span> Ready for itinerary planning</span>
+    </div>
+
+    <hr class="divider" style="background:rgba(255,255,255,0.15); margin:22px 0;">
+
+    <div class="grid grid-3">
+      <div>
+        <div class="mini-label" style="color:rgba(255,255,255,0.55);">Shared Interests</div>
+        <div class="chips">
+          <span class="chip accent">Heritage Sites</span>
+          <span class="chip accent">Local Food</span>
+          <span class="chip accent">Photography</span>
+          <span class="chip">Museums</span>
+          <span class="chip">Markets</span>
+        </div>
+      </div>
+      <div>
+        <div class="mini-label" style="color:rgba(255,255,255,0.55);">Agreed Travel Style</div>
+        <div class="chips">
+          <span class="chip">Balanced-Relaxed</span>
+          <span class="chip">Direct Routes</span>
+          <span class="chip">09:00 Start</span>
+          <span class="chip">2&ndash;3 Stops / Day</span>
+        </div>
+      </div>
+      <div>
+        <div class="mini-label" style="color:rgba(255,255,255,0.55);">Budget &amp; Food</div>
+        <div class="chips">
+          <span class="chip">₹3,200 / day</span>
+          <span class="chip">Vegetarian</span>
+          <span class="chip">Medium Spice</span>
+          <span class="chip">Street Food ✓</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="score-row">
+      <div class="score-pill"><b>78%</b><span>Overall alignment</span></div>
+      <div class="score-pill"><b>7 / 9</b><span>Shared interest areas</span></div>
+      <div class="score-pill"><b>₹3,200</b><span>Agreed daily budget</span></div>
+      <div class="score-pill"><b>1</b><span>Optional item left open</span></div>
+    </div>
+
+    <div class="btn-row mt-3">
+      <a href="cultural-exploration.html" class="btn btn-primary">Explore with these preferences</a>
+      <a href="time-optimization.html" class="btn btn-ghost-light">Build the day plan</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="brand"><span class="brand-mark">&#9992;</span> Travzy</div>
+      <div>Personalized Travel Itinerary Planning System &middot; Team 1 UI Prototype</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Dashboard</a>
+      <a href="traveler-profile.html">Profile</a>
+      <a href="group-preferences.html">Group</a>
+      <a href="cultural-exploration.html">Explore</a>
+      <a href="time-optimization.html">Time</a>
+      <a href="pricing-ticketing.html">Pricing</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
